@@ -1,0 +1,64 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+}
+span {
+  font-size: 12px;
+}
+
+.sec-container {
+  max-width: 1000px;
+  width: 90%;
+  padding: 0 5%;
+  margin: auto;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 16px;
+}
+
+.grid-container-10 {
+  display: grid;
+  /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+  grid-gap: 4px;
+  font-size: 12px !important    ;
+}
+
+/** work css **/
+.work-wrapper {
+}
+
+/** project css **/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap-flex {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  /* justify-content: space-between; */
+}
+
+.wrap-flex span {
+  margin: 0 12px 0 0;
+}
