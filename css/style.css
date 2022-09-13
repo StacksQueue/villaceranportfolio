@@ -13,7 +13,7 @@ h6 {
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 span {
   font-size: 12px;
@@ -26,26 +26,41 @@ span {
   margin: auto;
 }
 
-
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 16px;
 }
 
-.grid-container-10 {
+.grid-container-5 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 16px;
+}
+
+.wrap-grid {
   display: grid;
   /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
   grid-gap: 4px;
-  font-size: 12px !important    ;
+  font-size: 12px !important;
+  padding: 8px 0;
 }
 
 /** work css **/
 .work-wrapper {
+  padding: 20px 0;
 }
 
 /** project css **/
+.project-wrapper {
+  /* text-align: center; */
+  padding: 10px 20px;
+}
+
+.project-wrapper .title {
+  text-align: center;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -56,9 +71,36 @@ span {
   display: flex;
   align-items: center;
   padding: 10px 0;
+  text-align: left;
   /* justify-content: space-between; */
 }
 
 .wrap-flex span {
   margin: 0 12px 0 0;
+}
+
+/*skills*/
+.skill-container {
+  text-align: center;
+  padding: 10px;
+  /* border: 1px solid gray; */
+}
+
+.skill-content {
+  /* text-align: left; */
+  display: grid;
+  grid-gap: 4px;
+  font-size: 12px !important    ;
+}
+
+.big-icon {
+  font-size: 50px !important;
+}
+
+
+#me,
+#work-experience,
+#projects,
+#skills {
+  padding: 20px 0;
 }
