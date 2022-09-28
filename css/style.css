@@ -1,6 +1,6 @@
 @font-face {
   font-family: "oswald-semibold";
-  src: url("../css/fonts/oswald/Oswald-SemiBold.ttf") format("truetype");
+  src: url("./css/fonts/oswald/Oswald-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
