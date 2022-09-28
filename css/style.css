@@ -1,11 +1,11 @@
 @font-face {
   font-family: "oswald-semibold";
-  src: url("/css/fonts/oswald/Oswald-SemiBold.ttf") format("truetype");
+  src: url("./fonts/oswald/Oswald-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "oswald-medium";
-  src: url("fonts/oswald/Oswald-Medium.ttf") format("truetype");
+  src: url("./fonts/oswald/Oswald-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "oswald-light";
-  src: url("./css/fonts/oswald/Oswald-Light.ttf") format("truetype");
+  src: url("./fonts/oswald/Oswald-Light.ttf") format("truetype");
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
