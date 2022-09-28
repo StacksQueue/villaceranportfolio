@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "oswald-medium";
-  src: url("css/fonts/oswald/Oswald-Medium.ttf") format("truetype");
+  src: url("fonts/oswald/Oswald-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "oswald-regular";
-  src: url("../css/fonts/oswald/Oswald-Regular.ttf") format("truetype");
+  src: url("./fonts/oswald/Oswald-Regular.ttf") format("truetype");
 }
 
 @font-face {
