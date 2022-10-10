@@ -17,6 +17,9 @@
   font-family: "oswald-light";
   src: url("./fonts/oswald/Oswald-Light.ttf") format("truetype");
 }
+/*
+* general css styles
+*/
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* font-family: "oswald"; */
