@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-font.css" />
+    <link rel="stylesheet" href="css/custom-icon.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -28,12 +30,12 @@
       <div class="sec-container">
         <h2>work experience</h2>
         <hr />
-        <div class="grid-container-2">
-          <div class="work-wrapper">
+        <div class="work-container">
+          <div class="work-wrapper clickable">
             <h3>FULL-STACK WEB DEVELOPER</h3>
             <h4>G-angle Co., Ltd</h4>
             <p>09/2020-present</p>
-            <div class="grid-container-5">
+            <div class="worktech-wrapper">
               <p>ANGULAR</p>
               <p>NODEJS</p>
               <p>MONGODB</p>
@@ -44,11 +46,11 @@
               <p>CODECOMMIT</p>
             </div>
           </div>
-          <div class="work-wrapper">
+          <div class="work-wrapper clickable">
             <h3>WEB DEVELOPER (OJT)</h3>
             <h4>iCOMM INTERNATIONAL, Inc.</h4>
             <p>04/2019 - 10/2019</p>
-            <div class="grid-container-5">
+            <div class="worktech-wrapper">
               <p>MYSQL</p>
               <p>ASP.NET</p>
               <p>MVC</p>
@@ -63,36 +65,32 @@
       <div class="sec-container">
         <h2>projects</h2>
         <hr />
-        <div class="grid-container">
-          <div class="project-wrapper">
+        <div class="project-container">
+          <div class="project-wrapper clickable">
             <div class="title">
               <span class="material-symbols-outlined big-icon">folder</span>
               <h4>CREATOR RECRUITMENT PAGE</h4>
             </div>
             <div class="content">
-              <span>
-                Hard coded landing and register page for the creators who wants
-                to apply to the company
-              </span>
+              Hard coded landing and register page for the creators who wants to
+              apply to the company
             </div>
-            <div class="grid-container-3">
+            <div class="projtech-wrapper">
               <p>HTML</p>
               <p>CSS</p>
               <p>JAVASCRIPT</p>
             </div>
           </div>
-          <div class="project-wrapper">
+          <div class="project-wrapper clickable">
             <div class="title">
               <span class="material-symbols-outlined big-icon">folder</span>
               <h4>ANGULAR WEB 3D MODEL VIEWER</h4>
             </div>
             <div class="content">
-              <span>
-                Angular web 3D viewer that can load multiple files such as GLTF,
-                OBJ, FBX, and other 3d extension files
-              </span>
+              Angular web 3D viewer that can load multiple files such as GLTF,
+              OBJ, FBX, and other 3d extension files
             </div>
-            <div class="grid-container-3">
+            <div class="projtech-wrapper clickable">
               <p>ANGULAR</p>
               <p>THREEJS</p>
               <p>JAVASCRIPT</p>
@@ -104,12 +102,10 @@
               <h4>SCHOOL MIS HR SYSTEM</h4>
             </div>
             <div class="content">
-              <span>
-                Desktop Application for filing leave, request of make-up class,
-                request for room transfer and other school related filing.
-              </span>
+              Desktop Application for filing leave, request of make-up class,
+              request for room transfer and other school related filing.
             </div>
-            <div class="grid-container-3">
+            <div class="projtech-wrapper">
               <p>C#</p>
               <p>MYSQL</p>
             </div>
@@ -122,8 +118,8 @@
       <div class="sec-container">
         <h2>skills</h2>
         <hr />
-        <div class="grid-container-5">
-          <div class="skill-container">
+        <div class="skill-container">
+          <div class="skill-wrapper">
             <span class="material-symbols-outlined big-icon">web</span>
             <h4>FRONTEND WEB</h4>
             <div class="skill-content">
@@ -135,7 +131,7 @@
             </div>
           </div>
 
-          <div class="skill-container">
+          <div class="skill-wrapper">
             <span class="material-symbols-outlined big-icon">api</span>
             <h4>BACKEND WEB</h4>
             <div class="skill-content">
@@ -150,10 +146,10 @@
             </div>
           </div>
 
-          <div class="skill-container">
-            <span class="material-symbols-outlined big-icon"
-              >library_books</span
-            >
+          <div class="skill-wrapper">
+            <span class="material-symbols-outlined big-icon">
+              library_books
+            </span>
             <h4>LIBRARIES</h4>
             <div class="skill-content">
               <span>Three Js</span>
@@ -166,7 +162,7 @@
             </div>
           </div>
 
-          <div class="skill-container">
+          <div class="skill-wrapper">
             <span class="material-symbols-outlined big-icon">build</span>
             <h4>APPS AND TOOLS</h4>
             <div class="skill-content">
@@ -178,7 +174,7 @@
             </div>
           </div>
 
-          <div class="skill-container">
+          <div class="skill-wrapper">
             <span class="material-symbols-outlined big-icon">code</span>
             <h4>OTHERS</h4>
             <div class="skill-content">
@@ -186,7 +182,7 @@
               <span>Python</span>
               <span>C#</span>
               <span>SQL</span>
-              <span>MICROCONTROLLER</span>
+              <span>micro controller</span>
             </div>
           </div>
         </div>
@@ -195,16 +191,14 @@
     </section>
     <section id="footer">
       <div class="sec-container">
-        <div class="footer-wrapper">
+        <div class="footer-container">
           <h2>Keep in Touch</h2>
           <div class="content">
-            <span>You can contact at any of this link.</span>
-            <span
-              >You can also check out my latest projects, stackoverflow
-              reputation, and my not so booring life at social media
-            </span>
+            You can contact me at any of this link. You can also check out my
+            latest projects, stackoverflow reputation, and my not so booring
+            life at social media
           </div>
-          <div class="grid-container-5">
+          <div class="icon-wrapper">
             <a href="https://web.facebook.com/FullyLessen/">
               <i class="icon-facebook"></i>
             </a>
@@ -220,8 +214,8 @@
               <i class="icon-gmail"></i>
             </a>
             <a href="https://stackoverflow.com/users/14820590/stacks-queue">
-              <i class="icon-stackoverflow"></i
-            ></a>
+              <i class="icon-stackoverflow"></i>
+            </a>
           </div>
         </div>
       </div>
