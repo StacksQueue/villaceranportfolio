@@ -76,6 +76,35 @@ span {
   grid-gap: 5px;
 }
 
+.project-wrapper .icon-wrapper {
+  display: flex;
+}
+
+.project-status {
+  display: flex;
+  align-items: center;
+}
+
+.project-status span {
+  color: gray;
+}
+
+.orange-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fd9b00;
+  margin-right: 5px;
+}
+
+.green-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 5px;
+}
+
 /**
 * project styles
 */
