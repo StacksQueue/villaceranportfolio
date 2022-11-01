@@ -1,0 +1,22 @@
+body {
+    overflow-x: hidden;
+}
+
+.links i,
+.links span {
+    margin: inherit;
+    margin-right: 20px;
+}
+
+.links {
+    display: flex;
+    color: inherit;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.img-holder {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+}
