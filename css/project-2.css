@@ -22,12 +22,25 @@ hr {
 /*
 * end
 */
-
 .sec-container {
   max-width: 1000px;
   width: 90%;
   padding: 0 5%;
   margin: auto;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.title-wrapper .title {
+  width: 60%;
+  background-color: #71b2be;
+  font-size: xxx-large;
+  font-family: "oswald-semibold";
+  margin: 0;
 }
 
 .desc-wrapper {
@@ -50,22 +63,78 @@ hr {
 .detail-wrapper {
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 30px;
 }
 
 .detail-wrapper .image-holder {
   width: 60%;
   height: 350px;
-  /* padding: 5px; */
 }
 
 .detail-wrapper .fit-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .detail-wrapper .detail {
+  display: flex;
+  align-items: center;
   width: 40%;
   padding: 0px 10px;
+}
 
+.detail-wrapper .description-right {
+  background: #71b2be;
+  height: max-content;
+  position: relative;
+  right: 50px;
+  padding: 30px 10px;
+}
+
+.detail-wrapper .description-left {
+  background: #71b2be;
+  height: max-content;
+  position: relative;
+  right: -50px;
+  padding: 30px 10px;
+}
+
+@media screen and (max-width: 420px) {
+  .title-wrapper .title {
+    width: 100%;
+  }
+  .desc-wrapper {
+    display: grid;
+    padding-bottom: 20px;
+  }
+  .desc-wrapper .description,
+  .desc-wrapper .tech-stack {
+    width: 100%;
+  }
+
+  /* project details */
+  .detail-wrapper {
+    display: grid;
+  }
+  .detail-wrapper.left {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+  .detail-wrapper .image-holder {
+    width: 100%;
+    height: 250px;
+  }
+  .detail-wrapper .detail {
+    width: 100%;
+    padding: 0;
+  }
+
+  .detail-wrapper .description-right,
+  .detail-wrapper .description-left {
+    right: 0;
+    padding: 10px 5px;
+    top: -20px;
+    width: 90%;
+  }
 }
