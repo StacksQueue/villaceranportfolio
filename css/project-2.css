@@ -3,6 +3,7 @@
 */
 body {
   background: #eeeeee;
+  font-family: 'raleway-extralight';
 }
 
 h3 {
@@ -58,6 +59,11 @@ hr {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-gap: 16px;
 }
+/* technologies and dependencies */
+.iconwrapper {
+  font-family: "oswald-light";
+  text-align: center;
+}
 
 /* project details */
 .detail-wrapper {
@@ -103,6 +109,7 @@ hr {
 @media screen and (max-width: 420px) {
   .title-wrapper .title {
     width: 100%;
+    padding: 0 10px;
   }
   .desc-wrapper {
     display: grid;
