@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="./css/project.css" />
     <link rel="stylesheet" href="./css/custom-font.css" />
     <link rel="stylesheet" href="./css/custom-icon.css" />
@@ -19,9 +23,17 @@
           <div class="description">
             <h3>ABOUT THE PROJECT</h3>
             <hr />
+            <div class="links">
+              <i class="icon-github"></i>
+              <a href="#">github repository</a>
+            </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam
+              Kalidokit is a face, pose, and hand tracking calculator for VRM and 2D models develop by
+              <a href="https://github.com/yeemachine/kalidokit">yeemachine</a>.
+            </p>
+            <p>
+              In the tutorial, this only uses CDN links so I made possible in angular. An experience in
+              <a href="https://threejs.org/">THREEJS</a> is a great advantage in developing this web app.
             </p>
           </div>
           <div class="tech-stack">
@@ -37,11 +49,29 @@
                 <span>TYPESCRIPT</span>
               </div>
               <div class="iconwrapper">
+                <span class="material-symbols-outlined">css</span>
+                <span>KalidoKit</span>
+              </div>
+              <div class="iconwrapper">
                 <span class="icon-3d"></span>
                 <span>THREEJS</span>
               </div>
-              <span>4</span>
-              <span>5</span>
+              <div class="iconwrapper">
+                <span class="material-symbols-outlined">javascript</span>
+                <span>JAVASCRIPT</span>
+              </div>
+              <div class="iconwrapper">
+                <span class="material-symbols-outlined">html</span>
+                <span>HTML</span>
+              </div>
+              <div class="iconwrapper">
+                <span class="material-symbols-outlined">css</span>
+                <span>CSS</span>
+              </div>
+              <div class="iconwrapper">
+                <span class="material-symbols-outlined">css</span>
+                <span>Mediapipe/Tensorflow</span>
+              </div>
             </div>
           </div>
         </div>
@@ -51,40 +81,54 @@
       <div class="sec-container">
         <h3>PROJECT DETAILS</h3>
         <hr />
-        <!-- image 1 -->
+        <!-- GIF -->
         <div class="detail-wrapper">
           <div class="image-holder">
-            <img src="./assets/vtuber/vtuber-1.png" alt="" class="fit-image" />
+            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" class="fit-image" />
           </div>
           <div class="detail">
             <div class="description-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniamf
+              The face, eyes, hands, and body body movements are coordinated with the help of Mediapipe/Tensorflow.js
             </div>
           </div>
         </div>
-        <!-- image 2 -->
+        <!-- mouth -->
         <div class="detail-wrapper left">
           <div class="detail">
             <div class="description-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniamf
+              The mouth is coordinated from the camera and the loaded VRM model as Mediapipe/Tensorflow tracks face
+              compatible with
+              <a href="https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection">Facemesh</a>
             </div>
           </div>
           <div class="image-holder">
             <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" class="fit-image" />
           </div>
         </div>
-        <!-- image 1 -->
+        <!-- hands 1 -->
         <div class="detail-wrapper">
           <div class="image-holder">
             <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" class="fit-image" />
           </div>
           <div class="detail">
             <div class="description-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniamf
+              The hand is coordinated from the camera and the loaded VRM model as Mediapipe/Tensorflow tracks hands
+              compatible with
+              <a href="https://google.github.io/mediapipe/solutions/hands.html">Handpose</a>
             </div>
+          </div>
+        </div>
+        <!-- eyes 1 -->
+        <div class="detail-wrapper left">
+          <div class="detail">
+            <div class="description-left">
+              The eyes are coordinated from the camera and the loaded VRM model as Mediapipe/Tensorflow tracks face
+              compatible with
+              <a href="https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection">Facemesh</a>
+            </div>
+          </div>
+          <div class="image-holder">
+            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" class="fit-image" />
           </div>
         </div>
       </div>

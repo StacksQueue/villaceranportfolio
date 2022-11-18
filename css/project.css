@@ -3,7 +3,7 @@
 */
 body {
   background: #eeeeee;
-  font-family: 'raleway-extralight';
+  font-family: "raleway-extralight";
 }
 
 h3 {
@@ -37,7 +37,7 @@ hr {
 }
 
 .title-wrapper .title {
-  width: 60%;
+  width: 70%;
   background-color: #71b2be;
   font-size: xxx-large;
   font-family: "oswald-semibold";
@@ -54,13 +54,25 @@ hr {
   width: 48%;
 }
 
+/* about the project */
+.description .links {
+  padding: 5px 0;
+  display: inline-flex;
+}
+
+.description .links a {
+  margin-left: 5px;
+}
+
+/* technologies and dependencies */
 .tech-stack-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 10px;
 }
-/* technologies and dependencies */
+
 .iconwrapper {
+  display: grid;
   font-family: "oswald-light";
   text-align: center;
 }
@@ -70,6 +82,18 @@ hr {
   display: flex;
   justify-content: flex-start;
   padding-bottom: 30px;
+}
+
+.detail-wrapper.grid {
+  display: grid;
+}
+
+.detail-wrapper.grid .description {
+  background: #71b2be;
+  height: max-content;
+  position: relative;
+  padding: 15px 10px;
+  margin: 10px 0;
 }
 
 .detail-wrapper .image-holder {
