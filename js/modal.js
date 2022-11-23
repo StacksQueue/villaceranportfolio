@@ -23,7 +23,7 @@ btnclose.onclick = () => {
 
 function displayIframe(projectname) {
   var iframe= document.createElement('iframe');
-    iframe.src= './../project-vtuber.html';
+    iframe.src= './project-vtuber.html';
     iframe.width="100%"
     iframe.height="100%"
     iframe.frameBorder = 0;
