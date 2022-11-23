@@ -83,10 +83,12 @@ span {
 .project-status {
   display: flex;
   align-items: center;
+  padding: 5px 0 0 0;
 }
 
 .project-status span {
   color: gray;
+  font-family: "raleway-light";
 }
 
 .orange-circle {
@@ -135,8 +137,9 @@ span {
 }
 
 .project-wrapper .content {
-  padding: 10px 0;
+  padding: 5px 0 10px 0;
   font-size: 14px;
+  font-family: "raleway-light";
 }
 
 .projtech-wrapper {
@@ -163,7 +166,8 @@ span {
 .skill-content {
   display: grid;
   grid-gap: 4px;
-  font-size: 12px !important    ;
+  font-size: 10px !important;
+  font-family: "raleway-light";
 }
 
 .skill-content span {
@@ -183,6 +187,7 @@ span {
 .footer-container .content {
   padding: 10px 0 20px 0;
   font-size: 14px;
+  font-family: 'raleway-light';
 }
 
 .footer-container .icon-wrapper {

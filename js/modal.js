@@ -3,29 +3,53 @@ var modalcontent = document.getElementsByClassName("modal-content")[0];
 var btnclose = document.getElementsByName("close")[0];
 var projects = document.getElementsByClassName("project-wrapper");
 
-Array.from(projects).forEach((project, index) => {
+Array.from(projects).forEach((project) => {
   let projectname = project.getAttribute("name");
-  project.addEventListener("click", (evt) => {
-    displayIframe(projectname)
+  project.addEventListener("click", () => {
+    displayIframe(projectname);
     modal.style.display = "block";
-    setTimeout(() => {
-      modal.style.opacity = 1;
-    }, 1);
   });
 });
 
 btnclose.onclick = () => {
-  modal.style.opacity = 0;
-  setTimeout(() => {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
     modal.style.display = "none";
-  }, 500);
+  }
 };
 
 function displayIframe(projectname) {
-  var iframe= document.createElement('iframe');
-    iframe.src= './project-vtuber.html';
-    iframe.width="100%"
-    iframe.height="100%"
-    iframe.frameBorder = 0;
-    modalcontent.appendChild(iframe);
+  var frame = modal.querySelector("iframe");
+
+  if (frame) frame.remove();
+  var iframe = document.createElement("iframe");
+  iframe.width = "100%";
+  iframe.height = "100%";
+  iframe.frameBorder = 0;
+
+  switch (projectname) {
+    case "vtuber":
+      iframe.src = "./project-vtuber.html";
+      break;
+    case "borrow-system-front":
+      iframe.src = "./project-borrowsystem-front.html";
+      break;
+    case "borrow-system-back":
+      iframe.src = "./project-borrowsystem-back.html";
+      break;
+    case "creator-recruitment":
+      iframe.src = "./project-recruitment.html";
+      break;
+    case "threed-model-viewer":
+      iframe.src = "./project-3d-viewer.html";
+      break;
+    case "school-mis":
+      iframe.src = "./project-school-mis.html";
+      break;
+  }
+
+  modalcontent.appendChild(iframe);
 }
