@@ -131,6 +131,10 @@ hr {
 }
 
 @media screen and (max-width: 420px) {
+  .sec-container {
+    width: 96%;
+    padding: 0 2%;
+  }
   .title-wrapper .title {
     width: 100%;
     padding: 0 10px;
